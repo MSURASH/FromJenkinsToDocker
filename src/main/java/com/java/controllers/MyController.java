@@ -8,8 +8,6 @@ public class MyController {
 
 	@GetMapping("/jd")
 	public String print() {
-		
-
 		return "SPRING BOOT APPLICATION THROUGH JENKINS TO DOCKER...";
 	}
 }
