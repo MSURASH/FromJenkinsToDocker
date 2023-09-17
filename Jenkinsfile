@@ -14,19 +14,7 @@ pipeline {
   stages {
       
       
-       stage('Build Maven') {
       
-        steps{
-            
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/MSURASH/FromJenkinsToDocker.git']]])
-            bat 'mvn clean install -DskipTests'
-        
-        
-        }
-        
-        
-      
-    } 
     
     stage('Build Docker Image') {
       
